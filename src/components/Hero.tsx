@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -45,9 +46,12 @@ export default function Hero() {
               Discover our range of gifts, including textiles, home fragrance,
               glassware, and decor. Order small items by 1pm (EST) on Monday.
             </p>
-            <button className="border border-white text-white px-8 py-3 uppercase tracking-widest text-xs hover:bg-white hover:text-stone-900 transition-all duration-300 backdrop-blur-sm">
+            <Link
+              to="/collections/gifting"
+              className="border border-white text-white px-8 py-3 uppercase tracking-widest text-xs hover:bg-white hover:text-stone-900 transition-all duration-300 backdrop-blur-sm"
+            >
               Shop Gifts
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>
